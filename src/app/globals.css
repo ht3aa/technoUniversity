@@ -1,27 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #023047;
+  --secondary-color: #FFB703;
+  --white-color: #EBEBEB;
+  --not-active-white-color: #C6C4C4;
+  --accent-color-one: #FB8500;
+  --accent-color-two: #219EBC;
+  --accent-color-three: #8ECAE6;
+  --font-family: 'Poppins', sans-serif;
+  --wrapper-padding: 0 150px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+header {
+  color: var(--not-active-white-color);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+header ul li:hover {
+  color: var(--white-color);
 }
+
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*   } */
+/* } */
+
